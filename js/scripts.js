@@ -18,7 +18,7 @@ function beebBoop(input) {
     if(element.includes("3")) {
       outputArray[index] = " Won't you be my neighbor?"
     } else if(element.includes("2")) {
-      console.log('number 2 detected');
+      outputArray[index] = " Boop!"
     } else if(element.includes("1")) {
       console.log('number 1 detected');
     }
