@@ -17,6 +17,10 @@ function beebBoop(input) {
   outputArray.forEach(function(element) {
     if(element.includes("3")) {
       console.log('number 3 detected');
+    } else if(element.includes("2")) {
+      console.log('number 2 detected');
+    } else if(element.includes("1")) {
+      console.log('number 1 detected');
     }
   });
 
