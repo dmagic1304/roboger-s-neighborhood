@@ -24,4 +24,4 @@ Expected Output: console.log("number 3 detected")
 
 Test6: "It will go through the outputArray and log every element that contains 3, 2 or 1 with the hierarchy in that order"
 Code: beepBoop(13);
-Expected Output: console.log("number 3 detected")*2 | console.log("number 2 detected")*2 | console.log("number 1 detected")*2
+Expected Output: console.log("number 3 detected")*2 | console.log("number 2 detected")*2 | console.log("number 1 detected")*3
