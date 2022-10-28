@@ -1,8 +1,6 @@
 // Bussiness logic
-
 function beebBoop(input) {
   const userInput = Number(input);
-    console.log('User input: ' + userInput);
   let outputArray = []; 
 
   if(!Number.isInteger(userInput) || userInput < 1) {
@@ -24,5 +22,4 @@ function beebBoop(input) {
     }
     console.log('output array after conversion: ' + outputArray);
   });
-
 }
