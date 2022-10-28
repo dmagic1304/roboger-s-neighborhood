@@ -9,19 +9,20 @@ function beebBoop(input) {
     console.log('Incorrect input'); //add UI function that will print to DOM
   } else {
     for(i = 0; i <= userInput; i++) {      
-      outputArray.push(String(i));
+      outputArray.push(" " + String(i));
     }
-    console.log('output array: ' + outputArray);
+    console.log('output array before conversion: ' + outputArray);
   }  
 
-  outputArray.forEach(function(element) {
+  outputArray.forEach(function(element, index) {
     if(element.includes("3")) {
-      console.log('number 3 detected');
+      outputArray[index] = " Won't you be my neighbor?"
     } else if(element.includes("2")) {
       console.log('number 2 detected');
     } else if(element.includes("1")) {
       console.log('number 1 detected');
     }
+    console.log('output array after conversion: ' + outputArray);
   });
 
 }
