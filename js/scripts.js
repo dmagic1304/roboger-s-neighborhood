@@ -1,5 +1,6 @@
 // Bussiness logic
 function beebBoop(input) {
+  e.preventDefault();
   const userInput = Number(input);
   let outputArray = []; 
 
@@ -23,3 +24,10 @@ function beebBoop(input) {
     console.log('output array after conversion: ' + outputArray);
   });
 }
+
+
+// UI Logic
+window.addEventListener('load', function() {
+  const form = document.querySelector('form');
+  form.addEventListener('submit', beebBoop);
+})
