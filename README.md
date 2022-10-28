@@ -29,3 +29,7 @@ Expected Output: console.log("number 3 detected")*2 | console.log("number 2 dete
 Test7: "It will replace input elements containing number 3 with 'Won't you be my neighbor?'"
 Code: beepBoop(5);
 Expected Output: outputArray = [0, 1, 2, 'Won't you be my neighbor?', 4, 5]
+
+Test8: "It will replace input elements containing number 2 with 'Boop!'"
+Code: beepBoop(5);
+Expected Output: outputArray = [0, 1, 'Boop!, 'Won't you be my neighbor?', 4, 5]
