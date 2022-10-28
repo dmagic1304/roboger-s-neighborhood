@@ -37,6 +37,11 @@ function displayResult(result) {
   robotImg.removeAttribute('class');
 }
 
+function clearResult() {
+  const output = document.getElementById('result');
+  output.setAttribute('class', 'hidden');
+}
+
 function displayError() {
   const error = document.getElementById('error');
   const robotImg = document.getElementById('robot');
@@ -45,13 +50,8 @@ function displayError() {
 }
 
 function clearError() {
-  const output = document.getElementById('error');
-  output.setAttribute('class', 'hidden');
-}
-
-function clearResult() {
-  const output = document.getElementById('result');
-  output.setAttribute('class', 'hidden');
+  const error = document.getElementById('error');  
+  error.setAttribute('class', 'hidden');
 }
 
 window.addEventListener('load', function() {
