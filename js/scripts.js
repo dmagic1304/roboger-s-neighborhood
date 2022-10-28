@@ -2,6 +2,7 @@
 function beebBoop(e) {
   e.preventDefault();
   clearError();
+  clearResult();
   const userInput = Number(document.querySelector('input').value);
   let outputArray = []; 
 
@@ -21,8 +22,8 @@ function beebBoop(e) {
     } else if(element.includes("1")) {
       outputArray[index] = " Beep!";
     }
+    displayResult(outputArray);
   });
-  displayResult(outputArray);
 }
 
 
@@ -30,17 +31,26 @@ function beebBoop(e) {
 
 function displayResult(result) {
   const output = document.getElementById('result');
+  const robotImg = document.getElementById('robot');
   output.innerText = result;
   output.removeAttribute('class');
+  robotImg.removeAttribute('class');
 }
 
 function displayError() {
-  const output = document.getElementById('error');
-  output.removeAttribute('class');
+  const error = document.getElementById('error');
+  const robotImg = document.getElementById('robot');
+  error.removeAttribute('class');
+  robotImg.removeAttribute('class');
 }
 
 function clearError() {
   const output = document.getElementById('error');
+  output.setAttribute('class', 'hidden');
+}
+
+function clearResult() {
+  const output = document.getElementById('result');
   output.setAttribute('class', 'hidden');
 }
 
