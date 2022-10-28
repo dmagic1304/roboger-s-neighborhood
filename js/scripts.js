@@ -1,7 +1,8 @@
 // Bussiness logic
-function beebBoop(input) {
+function beebBoop(e) {
   e.preventDefault();
-  const userInput = Number(input);
+  const userInput = Number(document.querySelector('input').value);
+  console.log('input value: ' + userInput);
   let outputArray = []; 
 
   if(!Number.isInteger(userInput) || userInput < 1) {
@@ -10,7 +11,6 @@ function beebBoop(input) {
     for(i = 0; i <= userInput; i++) {      
       outputArray.push(" " + String(i));
     }
-    console.log('output array before conversion: ' + outputArray);
   }  
 
   outputArray.forEach(function(element, index) {
@@ -21,12 +21,20 @@ function beebBoop(input) {
     } else if(element.includes("1")) {
       outputArray[index] = " Beep!";
     }
-    console.log('output array after conversion: ' + outputArray);
   });
+
+  displayResult(outputArray);
 }
 
 
 // UI Logic
+
+function displayResult (result) {
+  const output = document.getElementById('result');
+  output.innerHTML = result;
+  output.removeAttribute('class');
+}
+
 window.addEventListener('load', function() {
   const form = document.querySelector('form');
   form.addEventListener('submit', beebBoop);
