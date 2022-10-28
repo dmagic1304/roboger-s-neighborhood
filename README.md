@@ -25,3 +25,7 @@ Expected Output: console.log("number 3 detected")
 Test6: "It will go through the outputArray and log every element that contains 3, 2 or 1 with the hierarchy in that order"
 Code: beepBoop(13);
 Expected Output: console.log("number 3 detected")*2 | console.log("number 2 detected")*2 | console.log("number 1 detected")*3
+
+Test7: "It will replace input elements containing number 3 with 'Won't you be my neighbor?'"
+Code: beepBoop(5);
+Expected Output: outputArray = [0, 1, 2, 'Won't you be my neighbor?', 4, 5]
