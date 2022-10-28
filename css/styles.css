@@ -9,6 +9,21 @@ body {
   background-attachment: fixed;
 }
 
+.headder {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgba(250, 235, 215, 0.507);
+  border: double black;
+  border-radius: 5%;
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
 .hidden {
   display: none;
 }
