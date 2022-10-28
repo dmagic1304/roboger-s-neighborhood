@@ -1,8 +1,9 @@
 // Bussiness logic
 
 function beebBoop(input) {
-  const userInput = input;
-  if(input !== Number) {
-    console.log('pelase enter a number');
+  const userInput = Number(input);
+    console.log('input ' + userInput);
+  if(!Number.isInteger(userInput)) {
+    console.log('pelase enter a whole number');
   }
 }
