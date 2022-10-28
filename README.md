@@ -33,3 +33,7 @@ Expected Output: outputArray = [0, 1, 2, 'Won't you be my neighbor?', 4, 5]
 Test8: "It will replace input elements containing number 2 with 'Boop!'"
 Code: beepBoop(5);
 Expected Output: outputArray = [0, 1, 'Boop!, 'Won't you be my neighbor?', 4, 5]
+
+Test9: "It will replace elements containig number 3 with 'Won't you be my neighbor?', elements with number 2 with 'Boop!', and elements containign number 1 with 'Beep!', in that hierarhy"
+Code: beepBoop(14);
+Expected Output: outputArray = [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!',  'Won't you be my neighbor?', 'Beep!']

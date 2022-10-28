@@ -16,11 +16,11 @@ function beebBoop(input) {
 
   outputArray.forEach(function(element, index) {
     if(element.includes("3")) {
-      outputArray[index] = " Won't you be my neighbor?"
+      outputArray[index] = " Won't you be my neighbor?";
     } else if(element.includes("2")) {
-      outputArray[index] = " Boop!"
+      outputArray[index] = " Boop!";
     } else if(element.includes("1")) {
-      console.log('number 1 detected');
+      outputArray[index] = " Beep!";
     }
     console.log('output array after conversion: ' + outputArray);
   });
