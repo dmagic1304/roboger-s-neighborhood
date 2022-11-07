@@ -9,7 +9,7 @@ function beebBoop(e) {
   if(!Number.isInteger(userInput) || userInput < 1) {    
     displayError();    
   } else {
-    for(i = 0; i <= userInput; i++) {      
+    for(let i = 0; i <= userInput; i++) {      
       outputArray.push(" " + String(i));
     }
   }  
